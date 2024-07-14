@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Meghasham Nemade | Portfolio</title>
+</head>
+<body>
+    <nav>
+        <div class="logo"><h1>Portfolio</h1></div>
+        <div class="openMenu"><i class="fa fa-bars"></i></div>
+        <ul class="mainMenu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="resume-meghasham.pdf" download>Resume</a></li>
+            <li><a href="contactme.html">Contact Me</a></li>
+             <div class="closeMenu"><i class="fa fa-times"></i></div>
+             <span class="icons">
+                <a href="https://www.facebook.com/profile.php?id=100088877835916"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.instagram.com/24_mayur_2007/"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.twitter.com/mayurnemade24"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.github.com/Meghasham-Nemade-242007"><i class="fab fa-github"></i></a>
+             </span>
+        </ul>
+    </nav>
+
+    <div class="main">
+        <div class="content1">
+            <h1 class="fade-in">I'M</h1>
+            <h1 id="animate-text"></h1>
+            <h3 class="fade-ina">FULLSTACK DEVELOPER</h3>
+            <p class="fade-inb">Hello, I am a full stack developer, designer and creative person. I have exeperience of almost 1 month in designing and building websites</p>
+            <a href="contactme.html" class="fade-in"><button>Hire Me!</button></a>
+            <div class="homeicon fade-in">
+                <a href="https://www.facebook.com/profile.php?id=100088877835916"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.instagram.com/24_mayur_2007/"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.twitter.com/mayurnemade24"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.github.com/Meghasham-Nemade-242007"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+        <div class="content2 fade-in">
+            <img src="images/mayur.jpg">
+        </div>
+    </div>
+  <script src="app.js"></script>
+  <script>
+    window.addEventListener('load', () => {
+      const elements = document.querySelectorAll('.fade-in');
+      elements.forEach((el, index) => {
+        el.style.animationDelay = `${index * 0.5}s`; // Adjust the delay as needed
+        el.classList.add('fade-in');
+      });
+    });
+  </script>
+</body>
+</html>
